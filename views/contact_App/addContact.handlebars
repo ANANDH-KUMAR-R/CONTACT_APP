@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="AddContact">
+        <article>
+            <h1>Add Contact</h1>
+            <form action="/api/addContact" method="post">
+                <div class="con-group">
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your First Name">
+                </div>
+                <div class="con-group">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your Last Name">
+                </div>                
+                <div class="con-group">
+                    <label for="phno">Phone no: </label>
+                    <input type="number" name="phno" id="phno" placeholder="Enter your Phone Number">
+                </div>
+                <div class="con-group">
+                    <label for="loc">Saving Location: </label>
+                    <select name="loc" id="loc">
+                        <option value="mobile">Mobile</option>
+                        <option value="sim">Sim</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                <button type="submit">SAVE</button>
+            </form>
+        </article>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+<div class="Single_cnt">
+<h1>Contact Info</h1>
+
+{{#if payload}}
+
+<div class="contact-info">
+    <ul class="info1">
+        <ul class="info2">
+            <li>First Name: {{payload.fname}}</li>
+            <li>Last Name: {{payload.lname}}</li>
+            <li>Phone no: {{payload.phno}}</li>
+            <li>Saved Loaction: {{payload.loc}}</li>
+        </ul>
+    </ul>
+</div>
+{{else}}
+<h1>No such Contact </h1>
+{{/if}}
+</div>

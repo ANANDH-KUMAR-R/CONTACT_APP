@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/*---------------- HOME -----------------*/
+.navbar {
+    height: 60px;
+    background-color: #e0f7fa;
+    overflow: hidden;
+    padding: 10px; 
+    position:fixed;
+    width: 100%; 
+    text-align: center;
+    z-index: 1000;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    background-color:white;
+    border: 1px solid #ccc; 
+    box-shadow: 10px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    list-style-type: none; 
+    padding: 15px;
+    margin: 0 20px 0 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: #090909;
+    font-size: 16px;
+    padding: 8px 12px; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+}
+
+.navbar a:hover {
+    color: white;
+    font-weight: 550;
+    background-color: #ff0808e3;
+}
+
+.navbar a:active {
+    background-color: #444; 
+}
+
+/* ------------------------    ADD CONTACT    ------------------------------------- */
+
+.AddContact{
+    padding-top: 100px;
+}
+
+section h1{
+    font-size: 24px;
+    color: #e60f0f;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    margin-top: 5px;
+}
+
+section {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.con-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus,
+select:focus {
+    border-color: #0288d1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(2, 136, 209, 0.5);
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff0808e3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+
+/* ----------   NOTICE   ---------- */
+
+.notice{
+    padding-top: 120px;
+}
+span {
+    width: 70vw;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+    border-right: 5px solid red;
+    border-left: 5px solid red;
+
+}
+
+/* --------------------------- View  Contact List  ----------------------------------- */
+
+.ContactList {
+    height: auto;
+    padding-top: 580px;
+    margin-top: 10px;
+    padding-bottom: 580px;
+    margin-bottom: 40px;
+    position: absolute;
+  top: 50px; 
+  bottom: 50px; 
+  left: 0;
+  right: 0;
+  overflow-y: scroll;
+  background-color: #f4f4f4;
+  height: calc(100vh - 100px);
+
+}
+/* .ContactList {
+    padding-top: 70px; 
+    padding-bottom: 80px; 
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow-y: auto; 
+    height: calc(100vh - 180px);
+    background-color: #f4f4f4;
+} */
+
+.conList h1 {
+    font-size: 24px;
+    color:#ff0808e3;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.C2 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+    border-radius: 6px;
+}
+
+.c3 {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.c3 li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.c3 li span {
+    font-weight: bold;
+    color: #333;
+}
+
+.conList h1:last-of-type {
+    color: #e60f0f;
+    font-style: italic;
+    text-align: center;
+}
+/*  */
+.btn-group>span{
+    border: none;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    align-items: center; /* Vertically center buttons if they have different heights */
+}
+
+/* Style for each button */
+.btn-group span {
+    display: inline-block;
+}
+
+/* Style for individual buttons */
+.btn-group a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-group a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+}
+
+/* Specific button colors */
+.btn-group .edit a {
+    background-color: #ffc107;
+}
+
+.btn-group .edit a:hover {
+    background-color: #e0a800;
+}
+
+.btn-group .delete a {
+    background-color: #dc3545;
+}
+
+.btn-group .delete a:hover {
+    background-color: #c82333;
+}
+
+
+
+
+/* ---------------------  FOOTER ------------------------ */
+.footer {
+    height: 60px;
+    background-color: #333; 
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 10px; 
+}
+
+.footer ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
+}
+
+.footer li {
+    display: inline-block;
+}
+
+.footer img {
+    width: 24px; 
+    height: 24px;
+    transition: transform 0.3s ease; 
+    filter: brightness(0.8);
+}
+.footer img:hover {
+    transform: scale(1.3); 
+    filter: brightness(1); 
+}
+
+/* --------------------   Single COntact   -----------------------*/
+
+/* .btn-group{
+    list-style: none;
+    width: inherit;
+
+}
+.btn-group>span>a{
+    display: flex;
+    width: 100px;
+}
+.btn-group>span{
+    width: inherit;
+} */
+
+.Single_cnt {
+    /* width: 300px; */
+    padding-top: 300px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.Single_cnt>h1 {
+    padding-top: 60px;
+    font-size: 2rem;
+    /* margin-bottom: 80px; */
+    color: red;
+    border-bottom: 1px solid grey;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+.contact-info .info1,
+.contact-info .info2 {
+    margin-bottom: 10px;
+}
+
+.contact-info li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+/* If no contact exists */
+h1.no-contact {
+    font-size: 1.8rem;
+    color: #FF6347;
+    text-align: center;
+    /* margin-top: 40px; */
+}
